@@ -1,0 +1,18 @@
+/* Global reset — make the canvas fill the full viewport */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #0a0a0f;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
