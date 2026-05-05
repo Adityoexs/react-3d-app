@@ -1,0 +1,44 @@
+/* CarShowroom.css — Ferrari-themed toggle button styles */
+
+.scene-toggle {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4px;
+  z-index: 100;
+  background: rgba(10, 10, 10, 0.85);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 6px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+}
+
+.scene-toggle button {
+  padding: 8px 22px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #aaa;
+  background: transparent;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.scene-toggle button:hover {
+  color: #fff;
+  background: rgba(204, 0, 0, 0.25);
+  box-shadow: 0 0 8px rgba(204, 0, 0, 0.4);
+}
+
+.scene-toggle button.active {
+  background: #CC0000;
+  color: #fff;
+  box-shadow: 0 0 14px rgba(204, 0, 0, 0.6);
+}
